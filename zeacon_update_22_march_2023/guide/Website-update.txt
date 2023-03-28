@@ -1,0 +1,26 @@
+This is for an update on an existing website https://zeaconglobal.com.
+
+1. Fix and connect Payeer.com API, perfect money, add bank deposit option showing account details which the admin can edit from the admin backend, Payeer, Perfect Money and nowpayment.io API already integrated, make the nonpayment.io to also load the barcode along wallet address, let admin be able to edit each deposit method details from the admin backend.
+
+2. integration of mailchimp.com API so we can send emails to subscribed users at ease, and add the subscription checkbox to the registration below the agree to terms checkbox and make it ticked at default for auto subscription of user during registration.
+
+3. The "Fund Deriv" menu should be under a sub-menu "Fund Broker", the withdrawal option for users from deriv.com not yet implemented, so write a withdrawal API that can be given to Deriv.com to use on their end to process user's withdrawal to zeaconglobal.com, it should work in such a way when the user selects to use zeaconglobal.com as the withdrawal cashier at Deriv.com end and when the withdrawal is processed successful at Deriv's end, it should get the user's withdrawal details and send a callback to zeaconglobal.com and the user's account balance on zeaconglobal.com will the credited with the exact withdrawn amount.
+
+4. All the withdrawals and broker funding should be summed on the user's dashboard outflow same goes for deposits to inflows, users should be able to filter transaction history for all the deposit and withdrawals with it's sum and all the withdrawal from deriv.com or other broker
+
+5. On deposit page for manual deposit methods, When the user click "Mark Paid" button, a success notification message should display to the user "Deposit has been initiated successfully, kindly wait for an approval" and a notification email with the amount, deposit method used, status and transaction link to the transaction should be sent to both user and admin and the deposit should available on the admin deposit page to approve or decline. same applied to withdrawals, template sample will be sent if requested.
+
+
+6. No Withdrawal method available for users to select, admin should be able to add, edit, enable or disable and delete withdrawal methods from backend and it will be available for users to select from the withdrawal page, also admin can set conversion rate for each withdrawals method from admin backend, the same goes for deposit methods, Admin should be able to add/edit, delete, enable or disable any of the available deposit method and also can be able to set different conversion rate for each of the deposit method, the rate and fees are already implemented but kindly move it into the edit modal of each withdrawal/deposit methods and also users must setup his/her withdrawal method on their profile before proceeding with the selected withdrawal method and OTP must be sent user's email address to confirm withdrawals.
+
+
+7. On the registration page, there should be an option to register as a business account or personal account also confirm password, username, Date of birth, address, country, state, a required checkbox for accept and agree with terms of use and an email verification email should be sent to users after account registration, then upon successful email verification it should redirect them to their profile page to setup their account and withdrawal accounts or complete KYC verification.
+
+8. Add a turn on/off trigger at the admin backend with amount input box to enforce a compulsory KYC verification for unverified accounts when the deposit balance is $100, Deposit into the wallet can be allowed, withdrawal and transfer to other client will be restricted, if the account is a business account, they will be required to submit the company registration certificate along with their details.
+
+9. withdrawals and internal transfers between clients should be charged a fee which the admin can edit from admin backend, there should be a preview/confirmation page with transaction details for both internal transfers and withdrawals and remember user have to enter the OTP code sent to his/her email before final sending, also success confirmation email should be sent to the both parties and the transaction details including the fee added to transaction history page.
+
+10. There should be "Payment Agent" menu and page also a sub-menu "Apply as Agent", (i) as for the payment agent page, it should display all the available payment agents and their respect details which they filled while applying to be an agent, there should be a country filter option so users can easily filter agents base on their country of choice (ii) on the payment agent application page, they are required to enter  An agent name, country, phone number, website/telegram, email, minimum and maximum transaction and further information, then admin can approve, decline, edit, delete agents from the agents page on the admin backend.
+
+
+11. API documentation under tools, for users to use their account username and key on their 3rd party app or on their website, the API functions includes, check balance, credit and debit account and a link to a page for users who which to use the API to generate, edit or delete API keys for their apps.
